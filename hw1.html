@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .infor {
+        color: blue;
+        display: inline-block;
+        /* margin-left: 10%; */
+        margin-right: 10px;
+        width: 150px;
+        text-align: right;
+      }
+      input[type="checkbox"] {
+        color: gold;
+        /* margin-left: 5%; */
+        margin-right: 2%;
+      }
+      input[type="submit"] {
+        margin-left: 150px;
+      }
+      .hobbies {
+        color: orange;
+        display: inline-block;
+        width: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 50%;
+        margin: auto;
+        background-color: aqua;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      "
+    >
+      <div
+        style="
+          width: 90%;
+          background-color: aliceblue;
+          margin: auto;
+          padding: 5px;
+        "
+      >
+        <p
+          style="
+            margin-top: 0%;
+            background-color: brown;
+            color: azure;
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-transform: uppercase;
+          "
+        >
+          Sở thích của bạn
+        </p>
+        <form action="">
+          <label class="infor">Họ và tên</label
+          ><input
+            type="text"
+            name="fullname"
+            style="margin-left: 0px; width: 200px; padding: 0; margin-bottom: 10px;"
+          /> 
+          <br>
+          <label class="infor">Email</label
+          ><input
+            type="text"
+            name="email"
+            style="margin-left: 0px; padding: 0; margin-top: 0;"
+          /><br /><br />
+          <label class="infor">Sở thích</label>
+          <label for="" class="hobbies"
+            ><input type="checkbox" name="sport" /> Thể thao</label
+          >
+          <label for="" class="hobbies"
+            ><input type="checkbox" name="music" /> Âm nhạc</label
+          >
+          <label for="" class="hobbies"
+            ><input type="checkbox" name="reading" /> Đọc sách</label
+          ><br />
+          <label for="" class="hobbies" style="margin-left: 164px"
+            ><input type="checkbox" name="web" /> Lướt web</label
+          >
+          <label for="" class="hobbies"
+            ><input type="checkbox" name="game" /> Chơi game</label
+          >
+          <label for="" class="hobbies"
+            ><input type="checkbox" name="movie" /> Điện ảnh</label
+          ><br />
+          <label for="" class="hobbies" style="margin-left: 164px"
+            ><input type="checkbox" name="travel" /> Du lịch </label
+          ><br />
+          <input type="submit" value="Gửi thông tin"  style="margin-left: 164px;"/>
+          <input type="reset" value="Nhập lại" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
