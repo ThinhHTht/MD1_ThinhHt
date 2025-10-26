@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .price {
+        display: inline-block;
+      }
+      .text {
+        vertical-align: top;
+      }
+      .container {
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0cap;
+      }
+      table th:first-child {
+        width: 40%;
+        text-align: left;
+      }
+      table th:not(:first-child) {
+        width: 15%;
+      }
+      tr:nth-child(odd) {
+        background-color: gainsboro;
+      }
+      tr {
+        height: 30px;
+      }
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Market research survey</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
+        doloribus facere distinctio hic porro id.
+      </p>
+      <hr style="border-style: dashed" />
+      <form action="">
+        <label for="age-range">What is your age range?</label><br />
+        <input list="range" name="age-range" id="age-range" size="50" />
+        <datalist id="range">
+          <option value="Under 18"></option>
+          <option value="18-24"></option>
+          <option value="25-34"></option>
+          <option value="35-44"></option>
+          <option value="45-54"></option>
+          <option value="55-64"></option>
+          <option value="65 or older"></option></datalist
+        ><br />
+        <label for="income-range">What is your yearly income range?</label
+        ><br />
+        <input list="icome" name="income-range" id="income-range" size="50" />
+        <datalist id="icome">
+          <option value="$0-25000$"></option>
+          <option value="$25001-50000$"></option>
+          <option value="$50001-75000$"></option></datalist
+        ><br />
+        <label for="gender">Gender identity</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="nonbianary" name="gender" value="nonbianary" />
+        <label for="nonbianary">Non-bianary</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other"
+          >Other <br />
+          <input type="text" name="gender" /></label
+        ><br />
+        <label
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+          sit.</label
+        ><br />
+        <input
+          type="checkbox"
+          id="product1"
+          name="product"
+          value="product1"
+        /><label for="product1">Product 1</label><br />
+        <input
+          type="checkbox"
+          id="product2"
+          name="product"
+          value="product2"
+        /><label for="product2">Product 2</label><br />
+        <input
+          type="checkbox"
+          id="product3"
+          name="product"
+          value="product3"
+        /><label for="product3">Product 3</label><br />
+        <label for="">How often ?</label><br />
+        <input type="radio" id="daily" name="frequency" value="daily" /><label
+          for="daily"
+          >Daily</label
+        ><br />
+        <input type="radio" id="weekly" name="frequency" value="weekly" />
+        <label for="weekly">Weekly</label><br />
+        <input type="radio" id="monthly" name="frequency" value="monthly" />
+        <label for="monthly">Monthly</label><br />
+        <label for="">How much?</label>
+        <p>
+          <span class="text">$</span>
+          <span class="price"
+            ><input
+              type="number"
+              id="dollas"
+              name="dollas"
+              style="width: 30px"
+            /><br /><label class="dollas" for="dollas">Dollas</label></span
+          ><span class="text">・</span
+          ><span class="price"
+            ><input
+              type="number"
+              id="cents"
+              name="cents"
+              style="width: 15px"
+            /><br /><label class="cent" for="cents">Cents</label></span
+          >
+        </p>
+        <label for="expect">Expectd product</label><br />
+        <textarea rows="5" cols="150"> </textarea><br />
+        <label for="">Level rating</label><br />
+        <table>
+          <tr>
+            <th></th>
+            <th>Strongly disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly agree</th>
+          </tr>
+          <tr role="price-radio" aria-labelledby="fair-price">
+            <th id="fair-price">Lorem ipsum dolor sit amet.</th>
+            <td>
+              <input
+                type="radio"
+                name="price"
+                id="expensive-1"
+                value="1"
+              /><br />
+              <label for="expensive-1">1</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="price"
+                id="expensive-2"
+                value="2"
+              /><br />
+              <label for="expensive-2">2</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="price"
+                id="expensive-3"
+                value="3"
+              /><br />
+              <label for="expensive-3">3</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="price"
+                id="expensive-4"
+                value="4"
+              /><br />
+              <label for="expensive-4">4</label>
+            </td>
+          </tr>
+
+          <tr role="quality-radio" aria-labelledby="quality-group">
+            <th id="quality-group">Lorem ipsum dolor sit amet.</th>
+            <td>
+              <input
+                type="radio"
+                name="quality"
+                id="quality-1"
+                value="1"
+              /><br />
+              <label for="quality-1">1</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="quality"
+                id="quality-2"
+                value="2"
+              /><br />
+              <label for="quality-2">2</label>
+            </td>
+
+            <td>
+              <input
+                type="radio"
+                name="quality"
+                id="quality-3"
+                value="3"
+              /><br />
+              <label for="quality-3">3</label>
+            </td>
+
+            <td>
+              <input
+                type="radio"
+                name="quality"
+                id="quality-4"
+                value="4"
+              /><br />
+              <label for="quality-4">4</label>
+            </td>
+          </tr>
+
+          <tr role="recommand-radio" aria-labelledby="recommand-group">
+            <th id="recommand-group">Lorem ipsum dolor sit amet.</th>
+            <td>
+              <input type="radio" name="recommend" id="recommend-1" value="1" />
+              <br />
+
+              <label for="recommend-1">1</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="recommend"
+                id="recommend-2"
+                value="2"
+              /><br />
+
+              <label for="recommend-2">2</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="recommend"
+                id="recommend-3"
+                value="3"
+              /><br />
+              <label for="recommend-3">3</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="recommend"
+                id="recommend-4"
+                value="4"
+              /><br />
+              <label for="recommend-4">4</label>
+            </td>
+          </tr>
+        </table>
+        <input type="button" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
