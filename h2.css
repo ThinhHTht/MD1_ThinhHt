@@ -1,0 +1,16 @@
+div{
+background-color: antiquewhite;
+margin: 5px auto;
+padding: 15px;
+font-family: 'Courier New', Courier, monospace;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+h3{
+    margin-top: 0;
+}
+#last-p{
+    margin-bottom: 0%;
+}

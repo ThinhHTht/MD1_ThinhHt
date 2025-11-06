@@ -1,0 +1,37 @@
+.container{
+    width: 50%;
+    margin: auto;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.property-text{
+    color: brown;
+    background-color: gainsboro;
+}
+#align-text{
+    border: 3px green solid;
+    text-align: center;
+    padding: 15px;
+}
+.example-frame{
+    background-color: rgb(219, 216, 216);
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.first-frame{
+    padding: 10px 15px;
+}
+button{
+    background-color: green;
+    color: aliceblue;
+}
+.example-content{
+    background-color: aliceblue;
+    border-left: 5px solid green;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
