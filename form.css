@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-container{
+    background-color: bisque;
+    margin: auto;
+    width: 250px;
+    margin-top: 50px;
+    padding: 10px;
+}
+h3{
+    padding-bottom: 15px;
+}
+input{
+    margin-bottom: 10px;
+}
+input:focus{
+    background-color: yellow;
+
+}
