@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      /* 2. Tạo lớp phủ gradient */
+      .container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(218, 213, 213, 0.3),
+          /* Giảm alpha để thấy rõ ảnh hơn */ rgb(0, 0, 0)
+        );
+        /* z-index: 1; */
+      }
+
+      /* 3. Đưa nội dung lên trên lớp phủ */
+      .tag,
+      .options,
+      .title {
+        z-index: 2;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        /* z-index: -200; */
+      }
+      .tag {
+        position: absolute;
+        width: fit-content;
+        background-color: brown;
+        color: azure;
+        padding: 5px;
+        border-radius: 5px;
+        top: 20px;
+        left: 20px;
+      }
+      .options div {
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      .options {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+      }
+      .options div::after {
+        content: "";
+        height: 10px;
+        border: 1px solid white;
+        position: absolute;
+        top: 100%;
+        left: calc(50%-0.5px);
+      }
+      .last::after {
+        visibility: hidden;
+      }
+      i {
+        color: aliceblue;
+        font-size: 30px;
+      }
+      .first {
+        background-color: brown;
+        border-color: brown !important;
+      }
+      .title {
+        position: absolute;
+        bottom: 25px;
+        left: 20px;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container opacity">
+      <img
+        src="https://www.mydriversedge.com/wp/app/uploads/2025/07/blogs_auto-repair-car.webp"
+        alt="car-repair"
+      />
+      <div class="tag">Automotive</div>
+      <div class="options">
+        <div class="first"><i class="fa-solid fa-gear"></i></div>
+        <div>A</div>
+        <div class="last">B</div>
+      </div>
+      <div class="title">
+        <h3>Car repairing tracking</h3>
+        <p>All platform</p>
+      </div>
+    </div>
+  </body>
+</html>
