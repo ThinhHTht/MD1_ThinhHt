@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-font: 'Courier New', Courier, monospace;
+        }
+        div{
+            width: 300px;
+            height: 200px;
+            font-weight: 400;
+            font-size: 2rem;
+            color: aliceblue;
+            font-family: var(--main-font);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: font-size 2s, transform 2s; 
+            background-color: grey;
+            margin: 100px auto;
+        
+        }
+        div:hover{
+            font-size: 3rem;
+            transform: scale(150%);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Grow
+    </div>
+</body>
+</html>
